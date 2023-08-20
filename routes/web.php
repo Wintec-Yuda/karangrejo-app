@@ -13,6 +13,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+Route::get('/wisata', function () {
+    return view('user.wisata');
+});
+Route::get('/ekonomi', function () {
+    return view('user.ekonomi');
+});
+Route::get('/limbah', function () {
+    return view('user.limbah');
+});
+Route::get('/sdm', function () {
+    return view('user.sdm');
+});
+Route::get('/rumah-belajar', function () {
+    return view('user.rumah_belajar');
+});
+Route::get('/info-pelatihan', function () {
+    return view('user.info_pelatihan');
 });
